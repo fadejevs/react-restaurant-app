@@ -13,6 +13,7 @@ const Navbar = () => {
   return(
 
     <nav className='app__navbar'>
+      
       <div className='app__navbar-logo'>
         <img src={images.gericht} alt="Logo" />
       </div>
@@ -32,7 +33,7 @@ const Navbar = () => {
       </div>
 
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu color='fff' fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu color='white' fontSize={27} onClick={() => setToggleMenu(true)} />
       
       {toggleMenu && (
         <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
@@ -46,8 +47,9 @@ const Navbar = () => {
           </ul>
         </div>        
       )}
-
       </div>
+
+
     </nav>
   )
 }
