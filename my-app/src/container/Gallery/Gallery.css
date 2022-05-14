@@ -5,7 +5,7 @@
     /* padding: 4rem 0 4rem 6rem; */
 }
 
-.app__gallery-content { 
+.app__gallery-content {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -13,11 +13,13 @@
     flex-direction: column;
 
     min-width: 500px;
+    padding-left: 6rem;
     padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
 .app__gallery-content button { 
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .app__gallery-images { 
@@ -126,10 +128,13 @@
 @media screen and (max-width: 650px) {
     .app__gallery { 
         padding: 4rem 0 4rem 2rem;
+        align-items: center;
+        width: 100%;
     }
 
-    .app__gallery-content { 
+    .app__gallery-content {
         min-width: 100%;
+        padding: 0;
     }
 
     .app__gallery-images_card { 
